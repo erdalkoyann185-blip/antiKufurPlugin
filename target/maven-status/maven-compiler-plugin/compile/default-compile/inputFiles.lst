@@ -1,0 +1,10 @@
+/Users/muratsarac415/Downloads/MuroKufurKoruma-main/IzmAntiKufur/src/main/java/org/oyuncozucu/izmAntiKufur/AntiKufurCommand.java
+/Users/muratsarac415/Downloads/MuroKufurKoruma-main/IzmAntiKufur/src/main/java/org/oyuncozucu/izmAntiKufur/IzmAntiKufur.java
+/Users/muratsarac415/Downloads/MuroKufurKoruma-main/IzmAntiKufur/src/main/java/org/oyuncozucu/izmAntiKufur/config/Settings.java
+/Users/muratsarac415/Downloads/MuroKufurKoruma-main/IzmAntiKufur/src/main/java/org/oyuncozucu/izmAntiKufur/filter/FilterResult.java
+/Users/muratsarac415/Downloads/MuroKufurKoruma-main/IzmAntiKufur/src/main/java/org/oyuncozucu/izmAntiKufur/filter/ProfanityFilter.java
+/Users/muratsarac415/Downloads/MuroKufurKoruma-main/IzmAntiKufur/src/main/java/org/oyuncozucu/izmAntiKufur/gui/AdminGui.java
+/Users/muratsarac415/Downloads/MuroKufurKoruma-main/IzmAntiKufur/src/main/java/org/oyuncozucu/izmAntiKufur/listener/ChatListener.java
+/Users/muratsarac415/Downloads/MuroKufurKoruma-main/IzmAntiKufur/src/main/java/org/oyuncozucu/izmAntiKufur/listener/GuiListener.java
+/Users/muratsarac415/Downloads/MuroKufurKoruma-main/IzmAntiKufur/src/main/java/org/oyuncozucu/izmAntiKufur/punishment/PunishmentManager.java
+/Users/muratsarac415/Downloads/MuroKufurKoruma-main/IzmAntiKufur/src/main/java/org/oyuncozucu/izmAntiKufur/punishment/PunishmentStep.java

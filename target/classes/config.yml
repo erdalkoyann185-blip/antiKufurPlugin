@@ -1,0 +1,116 @@
+filter:
+  enabled: true
+  log-detections: true
+  block-caps-bypass: true
+  max-repeated-characters: 2
+  check-spaced-letters: true
+  replacement: "***"
+
+  bad-words:
+    - "amk"
+    - "aq"
+    - "orospu"
+    - "pic"
+    - "siktir"
+    - "sikik"
+    - "yarrak"
+    - "got"
+    - "gavat"
+    - "kahpe"
+    - "pezevenk"
+    - "ibne"
+
+  whitelist:
+    - "klasik"
+    - "analiz"
+
+punishments:
+  warning-expire-minutes: 30
+  broadcast:
+    enabled: true
+    message: "&8[&cAntiKufur&8] &c%player% &7uygunsuz dil kullandigi icin uyarildi."
+
+  steps:
+    1:
+      actions:
+        - "message"
+        - "sound"
+      mute-seconds: 0
+      commands: []
+    2:
+      actions:
+        - "message"
+        - "title"
+        - "sound"
+      mute-seconds: 0
+      commands: []
+    3:
+      actions:
+        - "message"
+        - "mute"
+        - "sound"
+      mute-seconds: 120
+      commands: []
+    5:
+      actions:
+        - "kick"
+      mute-seconds: 0
+      commands:
+        - "warn %player% Kufur kullanimi: %match%"
+
+sounds:
+  blocked: "BLOCK_NOTE_BLOCK_BASS"
+  punishment: "ENTITY_VILLAGER_NO"
+
+messages:
+  prefix: "&8[&cAntiKufur&8] "
+  no-permission: "&cBu komutu kullanmak icin yetkin yok."
+  player-only: "&cBu komut sadece oyuncu tarafindan kullanilabilir."
+  reloaded: "&8[&cAntiKufur&8] &aConfig ve filtre yeniden yuklendi."
+  blocked: "&8[&cAntiKufur&8] &cMesajin engellendi. &7Eslesen: &f%match% &8(&7Ihlal: %violations%&8)"
+  punishment: "&8[&cAntiKufur&8] &eUyarildin. Tekrarinda daha agir ceza uygulanir."
+  title: "&cKufur Engellendi"
+  subtitle: "&7Temiz sohbet kurallarina uy."
+  muted: "&8[&cAntiKufur&8] &c%seconds% saniye susturuldun."
+  still-muted: "&8[&cAntiKufur&8] &cSusturulmus durumdasin. Kalan: %seconds% saniye."
+  kick: "Kufur kullanimi nedeniyle sunucudan atildin."
+  usage-test: "&cKullanim: /antikufur test <mesaj>"
+  usage-clear: "&cKullanim: /antikufur clear <oyuncu>"
+  usage-add: "&cKullanim: /antikufur add <kelime>"
+  usage-remove: "&cKullanim: /antikufur remove <kelime>"
+  player-not-found: "&cOyuncu bulunamadi."
+  cleared: "&a%player% icin ihlal ve mute verisi temizlendi."
+  word-added: "&a%word% yasak kelime listesine eklendi."
+  word-removed: "&a%word% yasak kelime listesinden silindi."
+  word-not-changed: "&e%word% icin liste degismedi."
+  test-result: "&8[&cAntiKufur&8] &7Blocked: &f%blocked% &7Matches: &f%matches% &7Sanitized: &f%sanitized%"
+  word-list: "&8[&cAntiKufur&8] &7Kelimeler: &f%words% &7Whitelist: &f%whitelist%"
+  word-stats: "&8[&cAntiKufur&8] &7Yasak kelime: &f%words% &7Whitelist: &f%whitelist%"
+  stats: "&8[&cAntiKufur&8] &7Takip edilen oyuncu sayisi: &f%tracked%"
+
+gui:
+  title: "&8Anti Kufur Paneli"
+  items:
+    status:
+      name: "&aSistem Durumu"
+      lore:
+        - "&7Durum: &f%enabled%"
+        - "&8Configten filter.enabled ile degistirilir."
+    words:
+      name: "&eKelime Listeleri"
+      lore:
+        - "&7Yasak kelime: &f%words%"
+        - "&7Whitelist: &f%whitelist%"
+        - "&8Liste icin tikla."
+    stats:
+      name: "&bIstatistik"
+      lore:
+        - "&7Takip edilen oyuncu: &f%tracked%"
+    reload:
+      name: "&6Config Yenile"
+      lore:
+        - "&7config.yml dosyasini yeniden okur."
+    close:
+      name: "&cKapat"
+      lore:
+        - "&7Paneli kapatir."

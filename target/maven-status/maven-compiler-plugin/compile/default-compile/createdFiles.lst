@@ -1,0 +1,11 @@
+org/oyuncozucu/izmAntiKufur/AntiKufurCommand.class
+org/oyuncozucu/izmAntiKufur/filter/ProfanityFilter.class
+org/oyuncozucu/izmAntiKufur/punishment/PunishmentManager.class
+org/oyuncozucu/izmAntiKufur/IzmAntiKufur.class
+org/oyuncozucu/izmAntiKufur/punishment/PunishmentStep.class
+org/oyuncozucu/izmAntiKufur/listener/ChatListener.class
+org/oyuncozucu/izmAntiKufur/filter/FilterResult.class
+org/oyuncozucu/izmAntiKufur/gui/AdminGui.class
+org/oyuncozucu/izmAntiKufur/punishment/PunishmentManager$ViolationState.class
+org/oyuncozucu/izmAntiKufur/listener/GuiListener.class
+org/oyuncozucu/izmAntiKufur/config/Settings.class

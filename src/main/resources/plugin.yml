@@ -1,0 +1,22 @@
+name: IzmAntiKufur
+version: '${project.version}'
+main: org.oyuncozucu.izmAntiKufur.IzmAntiKufur
+api-version: '1.21'
+load: POSTWORLD
+authors:
+  - MuroİZM
+description: paper 1.21.11 sürümü için dehşet plugin
+commands:
+  antikufur:
+    description: IzmAntiKufur yonetim komutu.
+    usage: /antikufur <gui|reload|test|list|stats|clear|add|remove>
+    aliases:
+      - akufur
+      - kufur
+permissions:
+  izmantikufur.admin:
+    description: Anti kufur yonetim komutlarini ve GUI'yi kullanir.
+    default: op
+  izmantikufur.bypass:
+    description: Kufur filtresinden etkilenmez.
+    default: false
